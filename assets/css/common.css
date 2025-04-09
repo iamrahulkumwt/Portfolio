@@ -1,0 +1,130 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --green: #66cc33;
+    --heading-backcolor: #6c757d;
+    --pcolor: #777;
+    --background: #212529;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 16px;
+    font-family: Montserrat-Regular;
+    scroll-behavior: smooth;
+    background: var(--background);
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../font/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url('../font/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../font/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url('../font/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Thin;
+    src: url('../font/Montserrat-Thin.ttf');
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+.pr-0 {
+    padding-right: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.wrap_padding{
+    padding: 70px 0;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+.form-control:focus{
+    border-color: var(--green);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(102 204 51 / 25%);
+}
+
+/* scrollbar styling */
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--green); 
+    border-radius: 10px;
+}
+
+/* scroll to top styling */
+.back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 10px;
+    display: none;
+    border-radius: 50%;
+    color: var(--white);
+    background: var(--green);
+    z-index: 999999;
+}
+.back-to-top:hover{
+    color: var(--green);
+    background: transparent;
+}
+
+.form-check-input:checked {
+    background-color: var(--light-green);
+    border-color: var(--light-green);
+}
+
+.form-check-input:focus,.form-select:focus {
+    border-color: var(--light-green);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(102 204 51 / 25%);
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+/* Text Selection Color */
+::selection {
+    color: #fff;
+    background: var(--green);
+}
+
